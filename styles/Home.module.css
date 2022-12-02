@@ -3,6 +3,14 @@
   align-items: center;
   justify-content: center;
   background-color: white;
+  flex-direction: column;
   height: 100vh;
+}
+
+.friday-title {
+  font-size: 45px;
+}
+
+.not-friday-title {
   font-size: 45px;
 }
