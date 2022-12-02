@@ -1,5 +1,7 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
+import { Analytics } from '@vercel/analytics/react';
+
 import Head from 'next/head';
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -9,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Bu gün cümədir?</title>
         <link rel="shortcut icon" href="../public/moon.ico" />
       </Head>
-      <Component {...pageProps} />{' '}
+      <Component {...pageProps} /> <Analytics />
     </>
   );
 }

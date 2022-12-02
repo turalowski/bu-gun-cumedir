@@ -38,13 +38,9 @@ export default function Home() {
         break;
       case 6:
         setTitle('Yox 🫠');
-        setDescription('Möhtəşəm günün səhəri.');
+        setDescription('Möhtəşəm günün sabahı.');
         break;
     }
-  }, []);
-
-  useEffect(() => {
-    document.title = 'Bu gün cümədir?';
   }, []);
 
   return (
