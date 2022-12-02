@@ -7,10 +7,12 @@
   height: 100vh;
 }
 
-.friday-title {
-  font-size: 45px;
+.title {
+  font-size: 4.5rem;
+  text-align: center;
 }
 
-.not-friday-title {
-  font-size: 45px;
+.description {
+  font-size: 2rem;
+  text-align: center;
 }

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.css';
+
 import Confetti from 'react-confetti';
 
 export default function Home() {
@@ -42,10 +43,14 @@ export default function Home() {
     }
   }, []);
 
+  useEffect(() => {
+    document.title = 'Bu gün cümədir?';
+  }, []);
+
   return (
     <div className={styles.Home}>
-      <div className={styles['not-friday-title']}>{title}</div>
-      <div style={{ fontSize: '20px' }}>{description}</div>
+      <span className={styles.title}>{title}</span>
+      <span className={styles.description}>{description}</span>
       {title.split(' ')[0] === 'Hə' && <Confetti />}
     </div>
   );
