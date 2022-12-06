@@ -8,8 +8,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Bu gün cümədir?</title>
-        <link rel="shortcut icon" href="/images/moon.ico" />
+        <h1 className='friday'>Bu gün cümədir?</h1>
+        <title>Qarabağ Azərbaycandır!</title>
+        <link rel="shortcut icon" href="/images/azerbaijan.png" />
       </Head>
       <Component {...pageProps} /> <Analytics />
     </>
