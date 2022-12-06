@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Bu gün cümədir?</title>
-        <link rel="shortcut icon" href="/images/moon.ico" />
+        <link rel="shortcut icon" href="/images/azerbaijan.png" />
       </Head>
       <Component {...pageProps} /> <Analytics />
     </>
